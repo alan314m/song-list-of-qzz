@@ -203,10 +203,10 @@ export default function Home() {
                   <Table responsive>
                     <thead>
                       <tr>
-                        <th>歌名</th>
-                        <th>歌手</th>
-                        <th>语言和曲风</th>
-                        <th>备注</th>
+                        <th className={styles.noWrapForce}>歌名</th>
+                        <th className={styles.noWrapForce}>歌手</th>
+                        <th className={styles.noWrapForce}>语言和曲风</th>
+                        <th className={styles.noWrapForce}>备注</th>
                       </tr>
                     </thead>
                     <tbody className="songList">
