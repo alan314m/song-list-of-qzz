@@ -1,4 +1,6 @@
-module.exports = {
+const withPWA = require('next-pwa')
+
+module.exports = withPWA({
   trailingSlash: true,
   exportPathMap: function () {
     return {
@@ -7,5 +9,8 @@ module.exports = {
   },
   images: {
     loader: "custom"
+  },
+  pwa: {
+    dest: 'public'
   }
-};
+});

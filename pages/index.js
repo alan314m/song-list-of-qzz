@@ -108,14 +108,40 @@ export default function Home() {
             content="清则子,清則子,B站,bilibili,哔哩哔哩,电台唱见,歌单"
           />
           <meta name="description" content="610清則子的歌单" />
-          <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+
+          <meta name="theme-color" content="#ffffff" />
+          <meta name="mobile-web-app-capable" content="yes" />
+          <meta name="apple-mobile-web-app-capable" content="yes" />
+          <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+          <meta name="apple-mobile-web-app-title" content="610的歌单" />
+          <meta name='format-detection' content='telephone=no' />
+          <meta name='msapplication-config' content='/a2hs/browserconfig.xml' />
+          <meta name='msapplication-tap-highlight' content='no' />
+          <link rel='shortcut icon' href='/favicon.ico' />
+
+          <link rel="apple-touch-icon" sizes="57x57" href="/a2hs/apple-icon-57x57.png" />
+          <link rel="apple-touch-icon" sizes="60x60" href="/a2hs/apple-icon-60x60.png" />
+          <link rel="apple-touch-icon" sizes="72x72" href="/a2hs/apple-icon-72x72.png" />
+          <link rel="apple-touch-icon" sizes="76x76" href="/a2hs/apple-icon-76x76.png" />
+          <link rel="apple-touch-icon" sizes="114x114" href="/a2hs/apple-icon-114x114.png" />
+          <link rel="apple-touch-icon" sizes="120x120" href="/a2hs/apple-icon-120x120.png" />
+          <link rel="apple-touch-icon" sizes="144x144" href="/a2hs/apple-icon-144x144.png" />
+          <link rel="apple-touch-icon" sizes="152x152" href="/a2hs/apple-icon-152x152.png" />
+          <link rel="apple-touch-icon" sizes="180x180" href="/a2hs/apple-icon-180x180.png" />
+          <link rel="icon" type="image/png" sizes="192x192"  href="/a2hs/android-icon-192x192.png" />
+          <link rel="icon" type="image/png" sizes="32x32" href="/a2hs/favicon-32x32.png" />
+          <link rel="icon" type="image/png" sizes="96x96" href="/a2hs/favicon-96x96.png" />
+          <link rel="icon" type="image/png" sizes="16x16" href="/a2hs/favicon-16x16.png" />
+          <link rel="manifest" href="/a2hs/manifest.json" />
+          <meta name="msapplication-TileColor" content="#ffffff" />
+          <meta name="msapplication-TileImage" content="/a2hs/ms-icon-144x144.png" />
         </Head>
 
         <section className={styles.main}>
           {/** 头像和标题 */}
           <Row>
             <Col>
-              <div className={styles.centerFlexDiv}>
+              <div className={styles.centerFlexDiv} style={{paddingTop: "2rem"}}>
                 <Image
                   loader={imageLoader}
                   className={styles.avatar}
