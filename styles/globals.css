@@ -57,3 +57,10 @@ a {
   border-color: transparent transparent transparent #424249;
 }
 
+@media (max-width: 480px) {
+  .Toastify__toast {
+    padding-top: 2rem !important;
+  }  
+}
+
+
