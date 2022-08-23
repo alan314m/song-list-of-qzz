@@ -11,7 +11,7 @@ function MyApp({ Component, pageProps }) {
   return (
     <>
       <Head>
-        <meta name='viewport' content='minimum-scale=1, initial-scale=1, width=device-width, shrink-to-fit=no, user-scalable=no, viewport-fit=cover' />
+        <meta name='viewport' content='initial-scale=1, width=device-width, shrink-to-fit=no, viewport-fit=cover' />
       </Head>
       {/** <div style={{ textAlign: 'center', padding: '10px'}}>测试环境, 请尽量使用二级域名<Link href="https://www.qingzezi.com" passHref><a target="_blank">https://qingzezi.com</a></Link>访问, 谢谢!</div> */}
       <Component {...pageProps} />
