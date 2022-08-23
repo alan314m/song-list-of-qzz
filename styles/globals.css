@@ -58,7 +58,7 @@ a {
 }
 
 @media (max-width: 480px) {
-  .Toastify__toast {
+  .Toastify__toast:first-child {
     padding-top: env(safe-area-inset-top, 8px) !important;
   }  
 }
