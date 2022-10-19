@@ -54,8 +54,20 @@
   transition: background-color 0.25s ease;
 }
 
-.songRow:hover {
+.songRow:hover, .songRow30sc:hover, .songRow100sc:hover {
   background-color: #F6CD86;
+}
+
+.songRow30sc {
+  cursor: pointer;
+  transition: background-color 0.25s ease;
+  background-color: #eef5fe;
+}
+
+.songRow100sc {
+  cursor: pointer;
+  transition: background-color 0.25s ease;
+  background-color: #fdf1c9;
 }
 
 .filters {

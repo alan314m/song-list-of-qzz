@@ -7,7 +7,7 @@ song_list = []
 
 for index, row in song_df.iterrows():
     # print(index, row[0], row[1])
-    song_data = {"index": index, "song_name": row[0], "artist": row[1], "lang_genre": row[2], "remarks": row[3]}
+    song_data = {"index": index, "song_name": row[0], "artist": row[1], "lang_genre": row[2], "remarks": row[3], "price": row[4]}
     song_list.append(song_data)
     
 
