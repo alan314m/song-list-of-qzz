@@ -102,7 +102,7 @@ export default function Home() {
     let songName_ = document.querySelector(
       ".songList>tr:nth-child(" + random + ")"
     ).childNodes[1];
-    console.log(songName_);
+
     if (!songName_) {
       toast.info("歌单已经没歌了!");
     } else if (songName_.id.includes("thirtySC")) {
