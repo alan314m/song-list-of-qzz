@@ -1,6 +1,6 @@
 {
   "name": "song_list_of_qzz",
-  "version": "0.2.4",
+  "version": "0.2.5",
   "private": true,
   "scripts": {
     "dev": "next dev",
