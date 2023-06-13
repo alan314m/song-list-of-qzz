@@ -2,7 +2,8 @@ html,
 body {
   padding: 0;
   margin: 0;
-  background-color: rgba(246,205,134,0.8);
+  /* background-color: rgba(246,205,134,0.8); */
+  background-color: #B3CAF9;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
@@ -23,7 +24,7 @@ a {
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #424249;
+  background-color: #405DB2;
   border-radius: 1rem;
 }
 
@@ -39,22 +40,22 @@ a {
 /* Up Arrow */
 ::-webkit-scrollbar-button:single-button:vertical:decrement {
   border-width: 0 5px 5px 5px;
-  border-color: transparent transparent #424249 transparent;
+  border-color: transparent transparent #405DB2 transparent;
 }
 /* Down Arrow */
 ::-webkit-scrollbar-button:single-button:vertical:increment {
   border-width: 5px 5px 0 5px;
-  border-color: #424249 transparent transparent transparent;
+  border-color: #405DB2 transparent transparent transparent;
 }
 /* Left Arrow */
 ::-webkit-scrollbar-button:single-button:horizontal:decrement {
   border-width: 5px 5px 5px 0;
-  border-color: transparent #424249 transparent transparent;
+  border-color: transparent #405DB2 transparent transparent;
 }
 /* Right Arrow */
 ::-webkit-scrollbar-button:single-button:horizontal:increment {
   border-width: 5px 0 5px 5px;
-  border-color: transparent transparent transparent #424249;
+  border-color: transparent transparent transparent #405DB2;
 }
 
 @media (max-width: 480px) {
@@ -63,4 +64,15 @@ a {
   }  
 }
 
-
+@media (min-width: 1201px) {
+  html,
+  body {
+    padding: 0;
+    margin: 0;
+    /* background-color: rgba(246,205,134,0.8); */
+    background-color: #9DBAD0;
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+      Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  }
+  
+}

@@ -388,7 +388,7 @@ export default function Home() {
                 <Image
                   loader={imageLoader}
                   className={styles.avatar}
-                  src="qzz_avatar.webp"
+                  src="610neo.webp"
                   alt="則宝的头像"
                   width={250}
                   height={250}
@@ -468,15 +468,15 @@ export default function Home() {
           <Row>
             <Col>
               <div className={styles.songListMarco}>
-                <Container fluid>
+                <Container fluid style={{padding: 0}}>
                   <Table responsive>
                     <thead>
                       <tr>
-                        <th className={styles.noWrapForce}></th>
-                        <th className={styles.noWrapForce}>歌名</th>
-                        <th className={styles.noWrapForce}>歌手</th>
-                        <th className={styles.noWrapForce}>语言和曲风</th>
-                        <th className={styles.noWrapForce}>备注</th>
+                        <th className={styles.noWrapForceRemoveBg}></th>
+                        <th className={styles.noWrapForceRemoveBg}>歌名</th>
+                        <th className={styles.noWrapForceRemoveBg}>歌手</th>
+                        <th className={styles.noWrapForceRemoveBg}>语言和曲风</th>
+                        <th className={styles.noWrapForceRemoveBg}>备注</th>
                       </tr>
                     </thead>
                     <tbody className="songList">

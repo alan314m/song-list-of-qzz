@@ -1,8 +1,12 @@
+import { useDeferredValue } from "react";
+
 import styles from "../styles/Home.module.css";
 
 export default function SongDetail({ filteredSongList, handleClickToCopy }) {
-  return filteredSongList.length !== 0 ? (
-    filteredSongList.map((song) => (
+  const deferredFilteredSongList = useDeferredValue(filteredSongList);
+
+  return deferredFilteredSongList.length !== 0 ? (  
+    deferredFilteredSongList.map((song) => (
       <tr
         className={
           song.price == 100
@@ -27,6 +31,7 @@ export default function SongDetail({ filteredSongList, handleClickToCopy }) {
               alt="付费"
               className={styles.tableIcons}
               title="付费曲目(100SC点唱)"
+              style={{marginLeft: "0.5rem"}}
             ></img>
           ) : song.price == 30 ? (
             <img
@@ -34,13 +39,14 @@ export default function SongDetail({ filteredSongList, handleClickToCopy }) {
               alt="付费"
               className={styles.tableIcons}
               title="付费曲目(30SC点唱)"
+              style={{marginLeft: "0.5rem"}}
             ></img>
           ) : (
             <div></div>
           )}
         </td>
         <td
-          className={styles.noWrapForce}
+          className={styles.noWrapForceRemoveBg}
           id={
             song.price == 100
               ? `hundredSC ${song.index}`
@@ -51,14 +57,14 @@ export default function SongDetail({ filteredSongList, handleClickToCopy }) {
         >
           {song.song_name}
         </td>
-        <td className={styles.noWrapForce}>{song.artist}</td>
-        <td className={styles.noWrapForce}>{song.lang_genre}</td>
-        <td className={styles.noWrapForce}>{song.remarks}</td>
+        <td className={styles.noWrapForceRemoveBg}>{song.artist}</td>
+        <td className={styles.noWrapForceRemoveBg}>{song.lang_genre}</td>
+        <td className={styles.noWrapForceRemoveBg}>{song.remarks}</td>
       </tr>
     ))
   ) : (
     <tr>
-      <td className="display-6 text-center" colSpan="4" id="noSongInList">
+      <td className={"display-6 text-center " + styles.noWrapForceRemoveBg} colSpan="5" id="noSongInList">
         歌单里没有诶~隐藏歌单碰碰运气!
       </td>
     </tr>
