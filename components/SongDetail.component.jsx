@@ -47,6 +47,7 @@ export default function SongDetail({ filteredSongList, handleClickToCopy }) {
         </td>
         <td
           className={styles.noWrapForceRemoveBg}
+          style={{ fontWeight: "bold" }}
           id={
             song.price == 100
               ? `hundredSC ${song.index}`
