@@ -57,8 +57,8 @@ export default function Home() {
           ?.toString()
           .toLowerCase()
           .includes(searchBox ? searchBox.toLowerCase() : "") ||
-        //搜索框搜备注
-        song.remarks
+        //搜索框搜难度
+        song.difficulty
           ?.toString()
           .toLowerCase()
           .includes(searchBox ? searchBox.toLowerCase() : ""))
@@ -476,7 +476,7 @@ export default function Home() {
                         <th className={styles.noWrapForceRemoveBg}>歌名</th>
                         <th className={styles.noWrapForceRemoveBg}>歌手</th>
                         <th className={styles.noWrapForceRemoveBg}>语言和曲风</th>
-                        <th className={styles.noWrapForceRemoveBg}>备注</th>
+                        <th className={styles.noWrapForceRemoveBg}>难度</th>
                       </tr>
                     </thead>
                     <tbody className="songList">

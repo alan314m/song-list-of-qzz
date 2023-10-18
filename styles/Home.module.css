@@ -63,13 +63,13 @@
 .songRow30sc {
   cursor: pointer;
   transition: background-color 0.25s ease;
-  background-color: #eef5fe;
+  background-color: #eef5fe99;
 }
 
 .songRow100sc {
   cursor: pointer;
   transition: background-color 0.25s ease;
-  background-color: #fdf1c9;
+  background-color: #fdf1c999;
 }
 
 .filters {
@@ -158,4 +158,24 @@
   .outerContainer {
     background-color: #D9E5FC;
   }
+}
+
+.easySong {
+  color: #83ca77;
+  font-weight: bold;
+}
+
+.mediumSong {
+  color: #ec9b53;
+  font-weight: bold;
+}
+
+.hardSong {
+  color: #df483a;
+  font-weight: bold;
+}
+
+.extremeSong {
+  color: #6f2123;
+  font-weight: bold;
 }

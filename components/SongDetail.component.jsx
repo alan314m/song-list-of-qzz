@@ -5,7 +5,7 @@ import styles from "../styles/Home.module.css";
 export default function SongDetail({ filteredSongList, handleClickToCopy }) {
   const deferredFilteredSongList = useDeferredValue(filteredSongList);
 
-  return deferredFilteredSongList.length !== 0 ? (  
+  return deferredFilteredSongList.length !== 0 ? (
     deferredFilteredSongList.map((song) => (
       <tr
         className={
@@ -31,7 +31,7 @@ export default function SongDetail({ filteredSongList, handleClickToCopy }) {
               alt="付费"
               className={styles.tableIcons}
               title="付费曲目(100SC点唱)"
-              style={{marginLeft: "0.5rem"}}
+              style={{ marginLeft: "0.5rem" }}
             ></img>
           ) : song.price == 30 ? (
             <img
@@ -39,7 +39,7 @@ export default function SongDetail({ filteredSongList, handleClickToCopy }) {
               alt="付费"
               className={styles.tableIcons}
               title="付费曲目(30SC点唱)"
-              style={{marginLeft: "0.5rem"}}
+              style={{ marginLeft: "0.5rem" }}
             ></img>
           ) : (
             <div></div>
@@ -60,12 +60,28 @@ export default function SongDetail({ filteredSongList, handleClickToCopy }) {
         </td>
         <td className={styles.noWrapForceRemoveBg}>{song.artist}</td>
         <td className={styles.noWrapForceRemoveBg}>{song.lang_genre}</td>
-        <td className={styles.noWrapForceRemoveBg}>{song.remarks}</td>
+        <td className={styles.noWrapForceRemoveBg}>
+          {song.difficulty == "简单" ? (
+            <span className={styles.easySong}>{song.difficulty}</span>
+          ) : song.difficulty == "中等" ? (
+            <span className={styles.mediumSong}>{song.difficulty}</span>
+          ) : song.difficulty == "困难" ? (
+            <span className={styles.hardSong}>{song.difficulty}</span>
+          ) : song.difficulty == "超级难" ? (
+            <span className={styles.extremeSong}>{song.difficulty}</span>
+          ) : (
+            <span>{song.difficulty}</span>
+          )}
+        </td>
       </tr>
     ))
   ) : (
     <tr>
-      <td className={"display-6 text-center " + styles.noWrapForceRemoveBg} colSpan="5" id="noSongInList">
+      <td
+        className={"display-6 text-center " + styles.noWrapForceRemoveBg}
+        colSpan="5"
+        id="noSongInList"
+      >
         歌单里没有诶~隐藏歌单碰碰运气!
       </td>
     </tr>
